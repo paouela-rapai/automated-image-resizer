@@ -1,7 +1,6 @@
 import os
 import glob
 from PIL import Image
-import sys
 
 
 class ImageResizer:
@@ -21,13 +20,3 @@ class ImageResizer:
                 output_image = os.path.join(output_dir, os.path.basename(image))
                 img.save(output_image)
                 print(f"{image} resized to {self.size} and saved as {output_image}")
-
-
-if __name__ == '__main__':
-    PATH = sys.argv[1]
-    HORIZONTAL_SIZE = sys.argv[2]
-    VERTICAL_SIZE = sys.argv[3]
-    
-    image_resizer = ImageResizer(PATH, HORIZONTAL_SIZE, VERTICAL_SIZE)
-    image_resizer.resize_images()
-

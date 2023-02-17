@@ -4,7 +4,7 @@ from PIL import Image
 import concurrent.futures
 import logging
 
-
+logging.basicConfig(filename='image_resizer.log', level=logging.INFO, format='%(asctime)s %(message)s')
 class ImageResizer:
     def __init__(self, path, horizontal_size, vertical_size):
         self.path = path

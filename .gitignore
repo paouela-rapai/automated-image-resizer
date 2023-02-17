@@ -4,3 +4,5 @@ __pycache__/
 # Virtual enviroments
 .venv/
 
+# Log file
+image_resizer.log

@@ -1,6 +1,7 @@
 # Automated Image Resizer
 
 Image Resizer is a command-line tool for resizing images in bulk within a specified directory. It uses the Python Imaging Library (PIL) to resize the images and allows for concurrent processing to increase performance.
+
 ## Setup
 
 1. Create a virtual environment
@@ -29,9 +30,9 @@ python main.py <path> <horizontal_size> <vertical_size>
 ```
     
 Where:
- -`path` is the path to the directory containing the images to be resized, 
- -`horizontal_size` is the desired horizontal size in pixels, and
- -`vertical_size` is the desired vertical size in pixels.
+ - `path` is the path to the directory containing the images to be resized, 
+ - `horizontal_size` is the desired horizontal size in pixels, and
+ - `vertical_size` is the desired vertical size in pixels.
 
 
 ## Output
